@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route, Link } from 'react-router-dom';
-import './css/navbar.css';
+import NavbarItems from './navbar-items';
+import '../css/navbar.css';
 
 class Navbar extends  Component{
+  state = {
+    listItems : [
+      {name: 'home', src: '/'},
+      {name: 'about', src: '/about'},
+      {name: 'services', src: '/services'},
+      {name: 'contact', src: '/contact'},
+    ]
+  }
   render(){
+    let items = this.state.listItems;
+    items = items.map(function(item, index) {
+      return(<NavbarItems name={item.name} src={item.src} key={index} currentDir={this.props.myPath}/>);
+    }.bind(this));
     return(
       <div className='navbar'>
         <div className='main-container'>
@@ -13,10 +26,7 @@ class Navbar extends  Component{
           </div>
           <div className='links'>
             <ul>
-              <li className='active'><Link to={"/"}>Home</Link></li>
-              <li><Link to={"/about"}>About</Link></li>
-              <li><Link to={"/services"}>Services</Link></li>
-              <li><Link to={"/contact"}>Contact</Link></li>
+              {items}
             </ul>
           </div>
           <div className='clear-fix'></div>

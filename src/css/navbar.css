@@ -28,7 +28,9 @@
   margin: 0;
   padding: 10px 40px;
   line-height: 50px;
+  cursor: pointer;
 }
+.navbar .links ul li:hover,
 .navbar .links ul li.active{
   background-color: #fff;
 }
@@ -39,7 +41,7 @@
   font-weight: bold;
   color: #fff;
 }
-
+.navbar .links ul li:hover a,
 .navbar .links ul li.active a{
   color: #FF6663;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route, Link } from 'react-router-dom';
-import Navbar from './navbar';
+import Navbar from './navbar/navbar';
 import './css/App.css';
 
 class App extends Component{
@@ -19,7 +19,7 @@ class Home extends Component{
   render(){
     return(
       <div className="home">
-        <Navbar />
+        <Navbar myPath= 'home'/>
 
       </div>
     );
