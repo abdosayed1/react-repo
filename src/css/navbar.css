@@ -1,0 +1,45 @@
+.navbar{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1D8E87;
+  color: #fff;
+}
+.navbar .logo{
+  padding: 10px;
+  display: inline-block;
+  float: left;
+  line-height: 50px;
+}
+.navbar .logo span{
+  color: #FF6663;
+}
+.navbar .links{
+  margin: 0;
+  padding: 0;
+}
+.navbar .links ul{
+  list-style: none;
+  display: inline-block;
+  float: right;
+}
+.navbar .links ul li{
+  display: inline-block;
+  margin: 0;
+  padding: 10px 40px;
+  line-height: 50px;
+}
+.navbar .links ul li.active{
+  background-color: #fff;
+}
+
+.navbar .links ul li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar .links ul li.active a{
+  color: #FF6663;
+}

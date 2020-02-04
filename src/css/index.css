@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #eee;
+}
+.main-container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+.clear-fix{
+  clear: both;
+}
