@@ -1,0 +1,33 @@
+.home{
+  height: 100vh;
+  background-color: #eee;
+}
+
+.home .welcome-banner{
+  background-color: #243E82;
+  clip-path: polygon(100% 0, 100% 21%, 63% 100%, 0 100%, 0 0);
+  color: #fff;
+  height: 100%;
+  padding-top: 15%;
+  width: 100%;
+  position: relative;
+}
+.home .welcome-banner .container{
+  width: 50%;
+}
+.home .welcome-banner h1{
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.home .welcome-banner p{
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px){
+  .home .welcome-banner .container{
+    width: 100%;
+  }
+}

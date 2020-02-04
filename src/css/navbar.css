@@ -45,3 +45,22 @@
 .navbar .links ul li.active a{
   color: #FF6663;
 }
+
+@media (max-width: 1024px){
+  .navbar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .navbar .links ul{
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
