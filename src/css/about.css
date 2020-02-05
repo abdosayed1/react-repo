@@ -1,0 +1,104 @@
+/*banner*/
+
+.About .banner{
+  width: 100%;
+  height: 70vh;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+.About .banner::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: .5;
+}
+.About .banner h2{
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*summary*/
+.About .summary{
+  padding: 100px 0;
+  background-color: #fff;
+}
+.About .summary h3{
+  font-size: 3rem;
+    color: #FF6663;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.About .summary p{
+  font-size: 1.3rem;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/*services*/
+.About h3.serviceHead{
+  margin: 100px 0 0;
+  text-align: center;
+  color: #FF6663;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.About .service-container{
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+}
+
+.About .service-container .serviceItem{
+  width: 30%;
+  overflow: hidden;
+  margin-right: 10%;
+  height: 35rem;
+  background-color: #fff;
+  box-shadow: #333 2px 2px 15px;
+}
+.About .service-container .serviceItem:last-child{
+  margin: 0;
+}
+.About .service-container .serviceItem .mainImg{
+  width: 100%;
+  height: 15rem;
+}
+.About .service-container .serviceItem:first-child .mainImg{
+  background-image: url(../images/flights.jpg);
+  background-size: cover;
+}
+.About .service-container .serviceItem:nth-child(2) .mainImg{
+  background-image: url(../images/manage-trips.jpg);
+  background-size: cover;
+}
+.About .service-container .serviceItem:last-child .mainImg{
+  background-image: url(../images/last-minute-decision.jpg);
+  background-size: cover;
+}
+
+.About .service-container .serviceItem .type{
+  margin: 20px 10px 30px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #333;
+}
+.About .service-container .serviceItem .description{
+  margin: 100px 10px 0;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #999;
+}

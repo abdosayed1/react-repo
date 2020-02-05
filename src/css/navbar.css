@@ -40,6 +40,7 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: #fff;
+  text-transform: capitalize;
 }
 .navbar .links ul li:hover a,
 .navbar .links ul li.active a{

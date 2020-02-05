@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router,
+  Switch,
+  Route,
+  Link } from 'react-router-dom';
 import Navbar from './navbar/navbar';
+import About from './about/about';
 import './css/App.css';
 
 class App extends Component{
   render(){
     return(
-        <HashRouter>
-            <Route path={"/"} component={Home}></Route>
-            
-        </HashRouter>
+        <Router>
+          <Switch>
+            <Route path={"/about"}><About /></Route>
+            <Route path={"/"}><Home /></Route>
+          </Switch>
+        </Router>
     );
   }
 }
