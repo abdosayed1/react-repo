@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 class Staff extends Component{
   render(){
@@ -8,7 +7,7 @@ class Staff extends Component{
         <div className='mainImg'></div>
         <h3 className='type'>{this.props.type}</h3>
         <p className='description'>{this.props.summary}</p>
-        <img src={this.props.img} />
+        <img src={this.props.img} alt={this.props.type}/>
       </div>
     );
   }

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Staff from './staff';
 import Services from './service';
 
 class AboutItems extends Component{
 
   render() {
-    if (this.props.name == 'summary'){
+    if (this.props.name === 'summary'){
   
         return(
           <div className='summary'>
@@ -16,7 +15,7 @@ class AboutItems extends Component{
             </div>
           </div>
         )
-    }else if (this.props.name == 'staff'){
+    }else if (this.props.name === 'staff'){
         let staffItem = this.props.description;
         staffItem = staffItem.map(
           (item, index) => {

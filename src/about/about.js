@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter, Route, Link } from 'react-router-dom';
 import AboutItems from './about-items';
 import Navbar from '../navbar/navbar';
 import '../css/about.css';

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../css/navbar.css';
 
 class NavbarItems extends Component{
 
   render() {
-    if(this.props.currentDir == this.props.name) {
+    if(this.props.currentDir === this.props.name) {
       return(
         <li className='active'>
           <Link to={this.props.src}>{this.props.name}</Link>
