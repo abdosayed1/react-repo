@@ -59,7 +59,7 @@
 .About .service-container{
   display: flex;
   flex-direction: row;
-  margin: 30px auto;
+  margin: 30px auto 100px;
 }
 
 .About .service-container .serviceItem{
@@ -101,4 +101,64 @@
     text-transform: capitalize;
     font-size: 1.2rem;
     color: #999;
+}
+
+/*staff*/
+
+.About .staff h3.staffHead{
+  font-size: 3rem;
+  color: #FF6663;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+.About .staff .staff-container{
+  display: flex;
+  flex-direction: column;
+}
+.About .staff .staff-container .staffItem{
+  display: flex;
+  align-content: center;
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.About .staff .staff-container .staffItem .mainImg{
+  min-width: 400px;
+  border-radius: 5px;
+}
+
+.About .staff .staff-container .staffItem:first-child .mainImg{
+  background-image: url(../images/ceo.jpg);
+  background-size: cover;
+}
+
+.About .staff .staff-container .staffItem:nth-child(2) .mainImg{
+  background-image: url(../images/developer.jpg);
+  background-size: cover;
+}
+.About .staff .staff-container .staffItem:last-child .mainImg{
+  background-image: url(../images/customer.jpg);
+  background-size: cover;
+}
+.About .staff .staff-container .staffItem .type{
+  margin: 0 30px 0 10px;
+  padding-top: 25px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.About .staff .staff-container .staffItem .description{
+  padding: 50px 20px;
+    width: 100%;
+    color: #444;
+    font-weight: bold;
+}
+.About .staff .staff-container .staffItem img{
+  padding: 5px;
+  border: 1px solid #FF6663;
+  border-radius: 50%;
 }

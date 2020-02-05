@@ -25,7 +25,10 @@ class AboutItems extends Component{
         );
         return(
           <div className='staff'>
-            {staffItem}
+            <h3 className='staffHead'>our team</h3>
+            <div className='main-container staff-container'>
+              {staffItem}
+            </div>
           </div>
         );
     }else{
